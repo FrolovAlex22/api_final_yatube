@@ -77,7 +77,7 @@ class FollowSerializer(serializers.ModelSerializer):
     def validate_following(self, following):
         if self.context.get('request').user == following:
             raise serializers.ValidationError('На себя подписаться нельзя!')
-        elif following in Follow.objects.all():
+        if following in Follow.objects.all():
             raise serializers.ValidationError(
                 'Вы уже подписаны на этого автора'
             )

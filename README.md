@@ -97,3 +97,23 @@ http://127.0.0.1:8000/api/v1/jwt/create/
 http://127.0.0.1:8000/api/v1/jwt/refresh/
 http://127.0.0.1:8000/api/v1/jwt/verify/
 ```
+
+### Использованные технологии:
+
+При работе над проектом, применялись следующие библиотеки:
+
+```
+Django==3.2.16
+pytest==6.2.4
+pytest-pythonpath==0.7.3
+pytest-django==4.4.0
+djangorestframework==3.12.4
+djangorestframework-simplejwt==4.7.2
+Pillow==9.3.0
+PyJWT==2.1.0
+requests==2.26.0
+```
+
+### Об авторе:
+
+Проект выполнен Фроловым Александром, студентом 64 когорты Яндекс практикума курса "Python разработчик".
